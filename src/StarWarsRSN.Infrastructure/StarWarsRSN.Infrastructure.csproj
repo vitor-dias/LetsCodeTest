@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!-- To Allow .NET Coverage Tools we set DebugType to Full-->
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1705;NU1701;CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Autofac" Version="4.6.0" />
+	  <PackageReference Include="EntityFramework" Version="6.4.4" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
+    <PackageReference Include="Dapper" Version="1.50.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StarWarsRSN.Application\StarWarsRSN.Application.csproj" />
+    <ProjectReference Include="..\StarWarsRSN.Domain\StarWarsRSN.Domain.csproj" />
+  </ItemGroup>
+  
+</Project>

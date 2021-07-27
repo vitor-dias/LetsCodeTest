@@ -1,0 +1,18 @@
+﻿{
+  "defaultAssembly": "StarWarsRSN.Infrastructure",
+  "modules": [
+    {
+      "type": "StarWarsRSN.Infrastructure.Modules.WebApiModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "StarWarsRSN.Infrastructure.Modules.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "StarWarsRSN.Infrastructure.InMemoryDataAccess.Module"
+    }
+  ]
+}

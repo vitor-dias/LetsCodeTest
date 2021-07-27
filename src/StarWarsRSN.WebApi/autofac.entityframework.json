@@ -1,0 +1,21 @@
+﻿{
+  "defaultAssembly": "StarWarsRSN.Infrastructure",
+  "modules": [
+    {
+      "type": "StarWarsRSN.Infrastructure.Modules.WebApiModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "StarWarsRSN.Infrastructure.Modules.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "StarWarsRSN.Infrastructure.EntityFrameworkDataAccess.Module",
+      "properties": {
+        "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=StarWarsRSNDb;Integrated Security=true;"
+      }
+    }
+  ]
+}

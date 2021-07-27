@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!-- To Allow .NET Coverage Tools we set DebugType to Full-->
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StarWarsRSN.Domain\StarWarsRSN.Domain.csproj" />
+  </ItemGroup>
+
+
+</Project>
